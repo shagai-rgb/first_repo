@@ -1,0 +1,534 @@
+body {
+  margin: 0px;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  text-shadow: 1px 1px hsla(0, 0%, 100%, 0.004);
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  height: 53px;
+}
+.head-logo {
+  margin-top: 3px;
+  padding: 10px;
+  width: 70px;
+}
+.head-weather {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  justify-content: center;
+}
+.weather {
+  display: flex;
+  margin-left: 0px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.header-w {
+  font-size: 11px;
+  line-height: 16px;
+  font: normal Helvetica Neue, sans-serif, Arial;
+  font: normal helvetica Neue, sans-serif, Arial;
+  text-align: right;
+  font-weight: 400;
+  margin: 0px;
+  width: 46px;
+  color: black;
+}
+.weather-icon {
+  margin-right: 10px;
+}
+.weather-temp {
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 0px;
+}
+.head-zurhai {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  justify-content: center;
+}
+.zurhai {
+  display: flex;
+  margin-left: 0px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.header-z {
+  font-size: 11px;
+  line-height: 16px;
+  font: normal Helvetica Neue, sans-serif, Arial;
+  text-align: right;
+  font-weight: 400;
+  margin: 0px;
+  width: 46px;
+  color: black;
+  width: 50px;
+}
+.zurhai-icon {
+  margin-right: 10px;
+}
+.zurhai-temp {
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.head-hansh {
+  margin-top: 5px;
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  justify-content: center;
+}
+.hansh {
+  display: flex;
+  margin-left: 0px;
+  align-items: center;
+  justify-content: left;
+  color: black;
+}
+.header-h {
+  font-size: 11px;
+  line-height: 16px;
+  font: normal Helvetica Neue, sans-serif, Arial;
+  text-align: right;
+  font-weight: 400;
+  margin: 0px;
+  width: 72px;
+  color: black;
+}
+.hansh-icon {
+  margin-right: 5px;
+  color: #2adb00;
+}
+.hansh-temp {
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.opacity {
+  opacity: 0.1;
+  margin-right: 5px;
+}
+.menu {
+  padding: 15px 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  margin-left: auto;
+}
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 0px;
+  }
+  .container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    width: 1100px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 39px;
+  }
+  .rightside {
+    margin-right: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-top: -15px;
+    align-items: end;
+  }
+
+  .rightside1 {
+    padding: 0px;
+    display: flex;
+    border-radius: 0px;
+    margin-right: 30px;
+    margin-top: -15px;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+  .text {
+    text-decoration: none;
+  }
+  .rightside2 {
+    padding: 0px;
+    display: flex;
+    margin-top: -15px;
+    border: none;
+  }
+  .weather {
+    display: flex;
+    margin-top: 5px;
+  }
+  .zurhai {
+    display: flex;
+    margin-top: 5px;
+  }
+  .hansh {
+    display: flex;
+    margin-top: 5px;
+  }
+  .weather-temp {
+    font-weight: 500;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 18px;
+  }
+  .zurhai-temp {
+    font-weight: 500;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 18px;
+  }
+  .hansh-temp {
+    font-weight: 500;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 18px;
+  }
+  .header-w {
+    line-height: 20px;
+    font-size: 12px;
+    font-family: Helvetica Neue, sans-serif;
+    width: 55.05px;
+  }
+  .header-z {
+    line-height: 20px;
+    font-size: 12px;
+    width: 62px;
+    font-family: Helvetica Neue, sans-serif;
+    display: flex;
+    justify-content: end;
+  }
+  .header-h {
+    line-height: 20px;
+    font-size: 12px;
+    font-family: Helvetica Neue, sans-serif;
+    width: 84px;
+  }
+  .hansh {
+    display: flex;
+    justify-content: end;
+  }
+  .menu {
+    display: none;
+  }
+  #head-logo {
+    width: 119px;
+    height: 39px;
+  }
+  .main-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .fa-solid {
+    display: flex;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: none;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .fa-magnifying-glass {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .triangle1 {
+    display: none;
+    top: 73px;
+    margin-left: 30px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    background-color: white;
+    z-index: 1020;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .layout1 {
+    display: none;
+    position: absolute;
+    z-index: 1020;
+    top: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    height: 274px;
+  }
+  .medee:hover ~ .layout1 {
+    opacity: 1;
+    display: flex;
+  }
+  .medee:hover ~ .triangle1 {
+    display: flex;
+    opacity: 1;
+  }
+  .triangle2 {
+    display: none;
+    top: 73px;
+    margin-left: 30px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    background-color: white;
+    z-index: 1020;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .layout2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
+    width: 305px;
+    height: 254px;
+  }
+
+  .mainmenu2:hover ~ .layout2 {
+    display: flex;
+  }
+  .mainmenu2:hover ~ .triangle2 {
+    display: flex;
+  }
+  .triangle3 {
+    display: none;
+    top: 73px;
+    margin-left: 30px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    background-color: white;
+    z-index: 1020;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .layout3 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
+    width: 133px;
+    height: 148px;
+  }
+  .mainmenu3:hover ~ .layout3 {
+    display: flex;
+  }
+  .mainmenu3:hover ~ .triangle3 {
+    display: flex;
+  }
+  .triangle4 {
+    display: none;
+    top: 73px;
+    margin-left: 30px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    background-color: white;
+    z-index: 1020;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .layout4 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    height: 212px;
+  }
+  .mainmenu4:hover ~ .layout4 {
+    display: flex;
+  }
+  .mainmenu4:hover ~ .triangle4 {
+    display: flex;
+  }
+  .test {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue, sans-serif, Arial;
+    font-weight: 700;
+
+    font-size: 16px;
+    padding-left: 25px;
+    color: #297cf0;
+  }
+  .test1 {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue, sans-serif, Arial;
+    font-weight: 700;
+
+    font-size: 16px;
+    color: #297cf0;
+  }
+  .hovers {
+    width: 120px;
+    word-wrap: normal;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 550;
+  }
+  .hovers2 {
+    width: 135px;
+    word-wrap: normal;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 550;
+  }
+  .hovers3 {
+    width: 133px;
+    word-wrap: normal;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 550;
+  }
+  .hovers4 {
+    width: 133px;
+    word-wrap: normal;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 550;
+    cursor: pointer;
+  }
+  .hovers4-4 {
+    background-color: white;
+    color: #000;
+    display: flex;
+    position: absolute;
+    margin-left: 20px;
+    width: 133px;
+    word-wrap: normal;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 550;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+    transition-timing-function: ease;
+  }
+  .hovers4-4:hover {
+    opacity: 0;
+  }
+  .hovers4:hover ~ .hovers4-4 {
+    opacity: 0;
+  }
+  .layout5 {
+    width: 1100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 385px;
+    display: flex;
+  }
+  .lay5-leftside {
+    padding-left: 40px;
+    width: 540px;
+
+    border-radius: 10px;
+    background: linear-gradient(
+      90deg,
+      #f4f4f4 7%,
+      hsla(0, 0%, 100%, 0.220348) 17%
+    );
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .lay5-button1 {
+    display: flex;
+    align-items: center;
+    width: 127px;
+    height: 30px;
+    background: #c40097;
+    background: linear-gradient(129deg, #c40097, #d6710b);
+    background-image: linear-gradient(-120deg, #e08100, #c90027);
+    font-family: Helvetica Neue, sans-serif, Arial;
+    font-size: 12px;
+    justify-content: center;
+    color: #fff;
+
+    font-weight: 700;
+  }
+}
