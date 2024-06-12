@@ -504,7 +504,7 @@ body {
   }
   .lay5-leftside {
     padding-left: 40px;
-    width: 540px;
+    width: 500px;
 
     border-radius: 10px;
     background: linear-gradient(
@@ -519,8 +519,9 @@ body {
   .lay5-button1 {
     display: flex;
     align-items: center;
-    width: 127px;
+    width: 75px;
     height: 30px;
+    border-radius: 100px;
     background: #c40097;
     background: linear-gradient(129deg, #c40097, #d6710b);
     background-image: linear-gradient(-120deg, #e08100, #c90027);
@@ -528,7 +529,89 @@ body {
     font-size: 12px;
     justify-content: center;
     color: #fff;
-
     font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .lay5-button1:hover {
+    width: 85px;
+  }
+  .lay5-text {
+    display: flex;
+    padding-right: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .lay5-text:hover {
+    opacity: 0.7;
+  }
+  .lay5-mini-text {
+    height: 48px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.4;
+    font-family: Helvetica Neue, sans-serif;
+  }
+  .lay5-mini-text {
+    display: flex;
+  }
+  .lay5-bottom {
+    display: flex;
+  }
+  .lay5-mini-button1 {
+    width: 65px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0efef;
+    border-radius: 100px;
+    color: #767676;
+    font-size: 16px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .fa-share1 {
+    display: flex;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #c6c6c6;
+  }
+  .fa-share2 {
+    display: flex;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #c6c6c6;
+    transform: rotate(45deg);
+  }
+  .lay5-mini-message-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa-message {
+    font-size: 11px;
+    color: #c6c6c6;
+    margin-right: 5px;
+    display: flex;
+  }
+  .lay5-mini-message {
+    font-size: 16px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 600;
+    color: #767676;
   }
 }
