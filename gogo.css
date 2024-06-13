@@ -306,7 +306,7 @@ body {
   .layout1 {
     display: none;
     position: absolute;
-    z-index: 1020;
+    z-index: 20;
     top: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -338,6 +338,7 @@ body {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
+
   .layout2 {
     display: none;
     position: absolute;
@@ -352,7 +353,6 @@ body {
     width: 305px;
     height: 254px;
   }
-
   .mainmenu2:hover ~ .layout2 {
     display: flex;
   }
@@ -495,24 +495,39 @@ body {
   .hovers4:hover ~ .hovers4-4 {
     opacity: 0;
   }
+  .lay-bot {
+    margin-top: 20px;
+    width: 100vw;
+    height: 768px;
+    background: linear-gradient(180deg, #fff, #f7f7f7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .layout5 {
+    border-radius: 10px;
     width: 1100px;
-    padding-left: 40px;
+    margin-left: 40px;
     padding-right: 40px;
     height: 385px;
     display: flex;
+    position: relative;
+    background: linear-gradient(
+      90deg,
+      #f4f4f4 7%,
+      hsla(0, 0%, 100%, 0.220348) 17%
+    );
+    justify-content: space-between;
   }
   .lay5-leftside {
     padding-left: 40px;
     width: 500px;
 
     border-radius: 10px;
-    background: linear-gradient(
-      90deg,
-      #f4f4f4 7%,
-      hsla(0, 0%, 100%, 0.220348) 17%
-    );
+
     display: flex;
+    position: relative;
+
     justify-content: center;
     flex-direction: column;
   }
@@ -584,18 +599,21 @@ body {
     transition: 0.3s;
     cursor: pointer;
   }
-  .fa-share1 {
+  .fa-share {
     display: flex;
-    font-size: 16px;
     margin-right: 8px;
     color: #c6c6c6;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
   }
-  .fa-share2 {
-    display: flex;
-    font-size: 16px;
-    margin-right: 8px;
-    color: #c6c6c6;
-    transform: rotate(45deg);
+
+  .lay5-mini-button1:hover {
+    width: 85px;
+    background-color: white;
+  }
+  .lay5-mini-button1:hover .fa-share {
+    font-size: 18px;
+    transform: rotate(30deg);
   }
   .lay5-mini-message-icon {
     display: flex;
@@ -613,5 +631,184 @@ body {
     font-family: Helvetica Neue, sans-serif;
     font-weight: 600;
     color: #767676;
+  }
+  .lay5-rightside {
+    height: 385px;
+    width: 508px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #lay5-zurag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 0.3s ease-in-out;
+  }
+  .lay5-rightside-text {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.5);
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    gap: 7px;
+  }
+  .lay5-rightside:hover img {
+    transform: scale(1.1);
+  }
+  .lay5-rightside:hover .lay5-rightside-text {
+    opacity: 1;
+  }
+  .layout6 {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lay6-image1 {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 264px;
+    height: 175px;
+    border-radius: 7px;
+  }
+  .lay6-image2 {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 264px;
+    height: 175px;
+    border-radius: 7px;
+  }
+  .lay6-image3 {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 264px;
+    height: 175px;
+    border-radius: 7px;
+  }
+  #lay6-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  .lay6-rightside-text {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.5);
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    gap: 7px;
+    cursor: pointer;
+  }
+  .lay6:hover #lay6-img {
+    transform: scale(1.1);
+  }
+  .lay6-image1:hover .lay6-rightside-text {
+    opacity: 1;
+  }
+
+  .lay6-image2:hover .lay6-rightside-text {
+    opacity: 1;
+  }
+
+  .lay6-image3:hover .lay6-rightside-text {
+    opacity: 1;
+  }
+  .lay6 {
+    cursor: pointer;
+    display: flex;
+    width: 263px;
+    height: auto;
+    flex-direction: column;
+  }
+  .lay6-text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .lay6-share {
+    display: flex;
+    margin-top: 10px;
+    color: #8e8e8e;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .lay6-text:hover {
+    opacity: 0.7;
+  }
+  .lay6-animate {
+    width: 263px;
+    height: 270px;
+    display: flex;
+    position: relative;
+  }
+  #khaan-bank {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    animation-name: banner;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #monpay {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    animation-name: banner1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes banner {
+    from {
+      display: flex;
+    }
+    to {
+      display: none;
+    }
+  }
+  @keyframes banner1 {
+    from {
+      display: none;
+    }
+    to {
+      display: flex;
+    }
   }
 }
