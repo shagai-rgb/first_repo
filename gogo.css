@@ -677,6 +677,7 @@ body {
     width: 1100px;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
   }
   .lay6-image1 {
     display: flex;
@@ -781,7 +782,7 @@ body {
     object-fit: cover;
     border-radius: 5px;
     animation-name: banner;
-    animation-duration: 2s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
   }
   #monpay {
@@ -792,23 +793,30 @@ body {
     object-fit: cover;
     border-radius: 5px;
     animation-name: banner1;
-    animation-duration: 2s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
   }
   @keyframes banner {
-    from {
-      display: flex;
+    0% {
+      opacity: 0;
     }
-    to {
-      display: none;
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
+
   @keyframes banner1 {
-    from {
-      display: none;
+    0% {
+      opacity: 1;
     }
-    to {
-      display: flex;
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
