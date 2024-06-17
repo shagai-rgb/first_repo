@@ -14,10 +14,16 @@ body {
   align-items: center;
   height: 53px;
 }
-.head-logo {
+#head-logo {
   margin-top: 3px;
   padding: 10px;
   width: 70px;
+}
+.main-menu {
+  display: none;
+}
+.rightside {
+  display: flex;
 }
 .head-weather {
   margin-top: 5px;
@@ -31,6 +37,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   justify-content: center;
+  width: 46 px;
+  height: 38px;
 }
 .weather {
   display: flex;
@@ -39,25 +47,31 @@ body {
   justify-content: center;
   color: black;
 }
+.text {
+  text-decoration: none;
+}
 .header-w {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 16px;
-  font: normal Helvetica Neue, sans-serif, Arial;
-  font: normal helvetica Neue, sans-serif, Arial;
+  font-family: normal Helvetica Neue, sans-serif, Arial;
   text-align: right;
   font-weight: 400;
   margin: 0px;
   width: 46px;
   color: black;
+  text-wrap: nowrap;
 }
 .weather-icon {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .weather-temp {
   font-size: 14px;
   line-height: 22px;
   margin-left: 0px;
+  font-weight: 500;
+  font-family: normal Helvetica Neue, sans-serif, Arial;
 }
+
 .head-zurhai {
   margin-top: 5px;
   margin-right: 5px;
@@ -79,9 +93,9 @@ body {
   color: black;
 }
 .header-z {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 16px;
-  font: normal Helvetica Neue, sans-serif, Arial;
+  font-family: normal Helvetica Neue, sans-serif, Arial;
   text-align: right;
   font-weight: 400;
   margin: 0px;
@@ -96,6 +110,8 @@ body {
   font-size: 14px;
   line-height: 22px;
   margin-left: 0px;
+  font-weight: 500;
+  font-family: normal Helvetica Neue, sans-serif, Arial;
   display: flex;
   align-items: center;
 }
@@ -119,9 +135,9 @@ body {
   color: black;
 }
 .header-h {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 16px;
-  font: normal Helvetica Neue, sans-serif, Arial;
+  font-family: normal Helvetica Neue, sans-serif, Arial;
   text-align: right;
   font-weight: 400;
   margin: 0px;
@@ -136,6 +152,8 @@ body {
   font-size: 14px;
   line-height: 22px;
   margin-left: 0px;
+  font-weight: 500;
+  font-family: normal Helvetica Neue, sans-serif, Arial;
   display: flex;
   align-items: center;
 }
@@ -148,9 +166,274 @@ body {
   border-left: 1px solid rgba(0, 0, 0, 0.05);
   margin-left: auto;
 }
+.lay-bot {
+  width: 100vw;
+  height: 330px;
+  display: grid;
+  overflow-x: scroll;
+  grid-template-columns: repeat(2, 100vw);
+}
+.lay5-rightside {
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+#lay5-zurag {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+.phone-text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  width: 100vw-40px;
+  height: 105px;
+}
+.phone-text-head {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  width: 100vw-40px;
+  height: 120px;
+}
+.phone-button1 {
+  display: flex;
+  align-items: center;
+  width: 75px;
+  height: 23px;
+  border-radius: 100px;
+  background: #c40097;
+  background: linear-gradient(129deg, #c40097, #d6710b);
+  background-image: linear-gradient(-120deg, #e08100, #c90027);
+  font-family: Helvetica Neue, sans-serif, Arial;
+  font-size: 11px;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+.phone-text1 {
+  display: flex;
+  font-size: 18px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 600;
+  opacity: 1;
+  color: black;
+}
+.phone-text2 {
+  display: flex;
+  font-size: 18px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 500;
+  opacity: 1;
+  color: white;
+}
+.phone-bottom {
+  display: flex;
+  margin-top: 10px;
+}
+.phone-mini-button1 {
+  display: flex;
+  align-items: center;
+  background: rgba(33, 33, 33, 0.7);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+  color: #c6c6c6;
+  font-family: Helvetica Neue, sans-serif, Arial;
+  font-size: 14px;
+  gap: 5px;
+}
+.phone-mini-message-icon {
+  display: flex;
+  align-items: center;
+  color: #c6c6c6;
+  font-family: Helvetica Neue, sans-serif, Arial;
+  font-size: 14px;
+  gap: 5px;
+  margin-left: 20px;
+}
+.lay5-rightside-text {
+  display: none;
+}
+.lay5-leftside {
+  display: none;
+}
+.layout6 {
+  display: flex;
+}
+.lay6 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+.lay6-image1 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+.lay6-image2 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+.lay6-image3 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+#lay6-img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+.lay6-animate {
+  display: none;
+}
+.lay6-rightside-text {
+  display: none;
+}
+.lay6-text {
+  display: none;
+}
+.lay6-share {
+  display: none;
+}
+.phone-lay7 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 36px;
+  align-items: center;
+}
+.ontsloh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 36px;
+  background-color: #212121;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+#ontslog-img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.shine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 100vw;
+  font: normal 14px / 22px Helvetica Neue, sans-serif, Arial;
+  color: white;
+  font-weight: 600;
+  background-color: #0050a4;
+}
+#shine-img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+#trend-img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.trend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 36px;
+  font: normal 14px / 22px Helvetica Neue, sans-serif, Arial;
+  color: white;
+  font-weight: 600;
+  background-color: #212121;
+}
+.layout7 {
+  width: 100vw;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+}
+.gogo-story-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  font-family: Helvetica Neue, sans-serif, Arial;
+}
+.story-h {
+  color: #fff;
+  padding: 2px 3px;
+  background-color: #00b0f4;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: Helvetica Neue, sans-serif, Arial;
+}
+.gogo-story {
+  margin-top: 20px;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(7, 45vw);
+  gap: 14px;
+  padding-left: 15px;
+}
+.story {
+  display: flex;
+  position: relative;
+  width: 45vw;
+  height: 235px;
+}
+.story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.story-text1 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  inset: 10px;
+  justify-content: space-between;
+}
+.story-text {
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+  font-family: Helvetica Neue, sans-serif, Arial;
+  max-height: 37px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+.eye {
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+  font-family: Helvetica Neue, sans-serif, Arial;
+}
+#g-logo {
+  width: 30px;
+  height: 30px;
+}
 @media only screen and (min-width: 900px) {
   body {
     margin: 0px;
+  }
+  .phone-lay7 {
+    display: none;
   }
   .container {
     display: flex;
@@ -581,6 +864,9 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+  .phone-text {
+    display: none;
+  }
   .lay5-button1 {
     display: flex;
     align-items: center;
@@ -728,6 +1014,18 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+  }
+  .lay6-animate {
+    display: flex;
+  }
+  .lay6-rightside-text {
+    display: flex;
+  }
+  .lay6-text {
+    display: flex;
+  }
+  .phone-text-head {
+    display: none;
   }
   .lay6-image1 {
     display: flex;
