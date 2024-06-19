@@ -1703,4 +1703,199 @@ body {
   .news-trend:hover .trend-t {
     opacity: 0.6;
   }
+  .layout9 {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    width: 1100px;
+    flex-direction: column;
+  }
+  .view-container {
+    display: flex;
+    gap: 15px;
+    width: 1100px;
+  }
+  .layout9-head {
+    display: flex;
+    align-items: center;
+    font: normal 20px / 22px Helvetica Neue, sans-serif, Arial;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .layout9-head:hover {
+    color: #044f9c;
+  }
+  #interview-logo {
+    width: 20px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  .interview-left {
+    width: 542.5px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #view1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 0.3s;
+  }
+  .interview-left-text {
+    display: flex;
+    position: absolute;
+    width: 482.5px;
+    padding: 30px;
+    z-index: 10;
+    bottom: 0px;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .view-left-head1 {
+    width: 32.6px;
+    height: 22px;
+    background-color: #407ce8;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font: normal 10px / 22px Helvetica Neue, sans-serif, Arial;
+    font-weight: 500;
+  }
+  .view-left-text {
+    font-family: Helvetica Neue, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .view-left-bot {
+    color: #fff;
+    padding-top: 10px;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+    font-size: 10px;
+    font: normal 10px / 22px Helvetica Neue, sans-serif, Arial;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .view-arrow {
+    margin-left: 3px;
+    transition: all 0.3s;
+  }
+  .interview-left:hover #view1-img {
+    transform: scale(1.1);
+  }
+  .interview-left:hover .view-left-head1 {
+    opacity: 0.8;
+  }
+  .interview-left:hover .view-left-text {
+    opacity: 0.8;
+  }
+  .interview-left:hover .view-arrow {
+    margin-left: 10px;
+  }
+  .interview-right {
+    width: 542.5px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .view-right1 {
+    width: 263.75px;
+    height: 243px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #view-r1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 0.3s;
+  }
+  .view-right-head1 {
+    display: flex;
+    position: absolute;
+    background-color: #407ce8;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font: normal 10px / 22px Helvetica Neue, sans-serif, Arial;
+    font-weight: 500;
+    left: 20px;
+    bottom: 80px;
+  }
+  .view-right-head2 {
+    display: flex;
+    position: absolute;
+    background-color: #407ce8;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font: normal 10px / 22px Helvetica Neue, sans-serif, Arial;
+    font-weight: 500;
+    left: 20px;
+    bottom: 80px;
+    transition: all 0.3s;
+  }
+  .view-right-text {
+    width: 223.75px;
+    display: flex;
+    position: absolute;
+    max-height: 55px;
+    font-family: Helvetica Neue, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    bottom: 25px;
+    line-height: 1.4;
+    left: 20px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .view-right1:hover #view-r1-img {
+    transform: scale(1.1);
+  }
+  .view-right1:hover .view-right-head1 {
+    opacity: 0.8;
+  }
+  .view-right1:hover .view-right-head2 {
+    opacity: 0.8;
+  }
+  .view-right1:hover .view-right-text {
+    max-height: 75px;
+  }
+  .view-right1:hover .view-right-head2 {
+    bottom: 100px;
+  }
+  .layout10 {
+    width: 1100px;
+    display: flex;
+    margin-top: 60px;
+  }
+  .gogo-story-logo {
+    cursor: pointer;
+  }
+  .lay10-logo {
+    margin-bottom: 20px;
+  }
+  .lay10-logo:hover {
+    color: #044f9c;
+  }
 }
