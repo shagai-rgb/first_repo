@@ -371,6 +371,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   color: #000;
+  padding-left: 15px;
   font-family: Helvetica Neue, sans-serif, Arial;
 }
 .story-h {
@@ -435,25 +436,27 @@ body {
   display: none;
 }
 .layout8 {
+  display: flex;
   width: 100vw;
 }
 .layout8-left {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .news-left {
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 15px;
   margin-top: 15px;
 }
 .l-news {
   width: 100%;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .l-news-hover {
   display: none;
@@ -462,25 +465,97 @@ body {
   display: none;
 }
 .l-news-img {
+  display: flex;
   width: 105px;
   height: 110px;
-  border-radius: 5px;
-  overflow: hidden;
 }
 #l-news-img {
-  width: 100%;
-  height: 100%;
+  width: 105px;
+  height: 110px;
   object-fit: cover;
+  border-radius: 5px;
 }
 .l-news-text {
   display: flex;
   flex-direction: column;
-  width: auto;
+  font-size: 15px;
+  font-family: Helvetica Neue, sans-serif;
+  text-wrap: wrap;
+}
+.l-news-icon {
+  display: flex;
+}
+.l-news-icon1 {
+  font-size: 12px;
+  font-family: Helvetica Neue, sans-serif;
+  color: #888;
+}
+.l-news-icon2 {
+  font-size: 12px;
+  font-family: Helvetica Neue, sans-serif;
+  color: #888;
 }
 .l-news-head {
-  width: 100%;
+  margin-bottom: 10px;
+  text-wrap: wrap;
 }
-
+.l-news-banner {
+  display: none;
+}
+.lay6-animate-phone {
+  display: flex;
+  height: auto;
+}
+#khaan-bank {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  animation-name: banner;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+#monpay {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  animation-name: banner1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+@keyframes banner {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes banner1 {
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media only screen and (min-width: 900px) {
   body {
     margin: 0px;
@@ -1068,6 +1143,9 @@ body {
     justify-content: space-between;
     margin-top: 30px;
   }
+  .lay6-animate-phone {
+    display: none;
+  }
   .lay6-animate {
     display: flex;
   }
@@ -1319,7 +1397,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 720px;
+    width: 690px;
   }
   .calendar {
     display: block;
